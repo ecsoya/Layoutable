@@ -11,6 +11,9 @@
 		8A60C10C1FC7ACF20030CB36 /* WeightsLayoutData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C1091FC7ACF20030CB36 /* WeightsLayoutData.swift */; };
 		8A60C10D1FC7ACF20030CB36 /* LayoutableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C10A1FC7ACF20030CB36 /* LayoutableView.swift */; };
 		8A60C10E1FC7ACF20030CB36 /* WeightsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C10B1FC7ACF20030CB36 /* WeightsLayout.swift */; };
+		8A60C11B1FC7B0A40030CB36 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C11A1FC7B0A40030CB36 /* StackView.swift */; };
+		8A60C11E1FC7B0D90030CB36 /* SliderEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C11D1FC7B0D90030CB36 /* SliderEditor.swift */; };
+		8A60C1211FC7B1850030CB36 /* ActivityIndicatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A60C1201FC7B1850030CB36 /* ActivityIndicatorButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		8A60C1091FC7ACF20030CB36 /* WeightsLayoutData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightsLayoutData.swift; sourceTree = "<group>"; };
 		8A60C10A1FC7ACF20030CB36 /* LayoutableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutableView.swift; sourceTree = "<group>"; };
 		8A60C10B1FC7ACF20030CB36 /* WeightsLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightsLayout.swift; sourceTree = "<group>"; };
+		8A60C11A1FC7B0A40030CB36 /* StackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		8A60C11D1FC7B0D90030CB36 /* SliderEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderEditor.swift; sourceTree = "<group>"; };
+		8A60C1201FC7B1850030CB36 /* ActivityIndicatorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 			children = (
 				8A60C1011FC7ACC80030CB36 /* Layoutable.h */,
 				8A60C1021FC7ACC80030CB36 /* Info.plist */,
+				8A60C11F1FC7B1740030CB36 /* AIB */,
+				8A60C11C1FC7B0C80030CB36 /* Slider */,
+				8A60C1191FC7B0880030CB36 /* Stack */,
 				8A60C10F1FC7AD080030CB36 /* Weights */,
 			);
 			path = Layoutable;
@@ -67,6 +76,30 @@
 				8A60C1091FC7ACF20030CB36 /* WeightsLayoutData.swift */,
 			);
 			path = Weights;
+			sourceTree = "<group>";
+		};
+		8A60C1191FC7B0880030CB36 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				8A60C11A1FC7B0A40030CB36 /* StackView.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		8A60C11C1FC7B0C80030CB36 /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				8A60C11D1FC7B0D90030CB36 /* SliderEditor.swift */,
+			);
+			path = Slider;
+			sourceTree = "<group>";
+		};
+		8A60C11F1FC7B1740030CB36 /* AIB */ = {
+			isa = PBXGroup;
+			children = (
+				8A60C1201FC7B1850030CB36 /* ActivityIndicatorButton.swift */,
+			);
+			path = AIB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +185,9 @@
 				8A60C10E1FC7ACF20030CB36 /* WeightsLayout.swift in Sources */,
 				8A60C10D1FC7ACF20030CB36 /* LayoutableView.swift in Sources */,
 				8A60C10C1FC7ACF20030CB36 /* WeightsLayoutData.swift in Sources */,
+				8A60C11E1FC7B0D90030CB36 /* SliderEditor.swift in Sources */,
+				8A60C1211FC7B1850030CB36 /* ActivityIndicatorButton.swift in Sources */,
+				8A60C11B1FC7B0A40030CB36 /* StackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

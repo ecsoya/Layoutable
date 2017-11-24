@@ -1,6 +1,6 @@
 //
 //  WeightsLayout.swift
-//  Impasto
+//  Layoutable
 //
 //  Created by Ecsoya on 17/03/2017.
 //  Copyright © 2017 Soyatec. All rights reserved.
@@ -8,43 +8,43 @@
 
 import UIKit
 
-class WeightsLayout {
+public class WeightsLayout {
 
-    var hMargin: CGFloat = 0
+    public var hMargin: CGFloat = 0
 
-    var vMargin: CGFloat = 1
+    public var vMargin: CGFloat = 1
 
-    var spacing: CGFloat = 0
+    public var spacing: CGFloat = 0
 
-    var weights: [Int] = []
+    public var weights: [Int] = []
 
-    var horizontal = true
+    public var horizontal = true
 
-    var layoutDatas = [UIView: WeightsLayoutData]()
+    public var layoutDatas = [UIView: WeightsLayoutData]()
 
     // Layout subviews if the frame has been changed by this Layout.
-    var delegate: WeightsLayoutDelegate?
+    public var delegate: WeightsLayoutDelegate?
 
-    init() {
+    public init() {
     }
 
-    init(horizontal: Bool) {
+    public init(horizontal: Bool) {
         self.horizontal = horizontal
     }
 
-    init(weights: [Int]) {
+    public init(weights: [Int]) {
         self.weights = weights
     }
 
-    func layout(_ view: UIView) {
+    public func layout(_ view: UIView) {
         layout(view, size: view.bounds.size)
     }
 
-    func layout(_ view: UIView, size: CGSize) {
+    public func layout(_ view: UIView, size: CGSize) {
         layout(view.subviews, width: size.width, height: size.height)
     }
 
-    func layout(_ views: [UIView], width: CGFloat, height: CGFloat) {
+    public func layout(_ views: [UIView], width: CGFloat, height: CGFloat) {
         if weights.isEmpty {
             weights = Array.init(repeating: 1, count: views.count)
         }
@@ -154,6 +154,6 @@ class WeightsLayout {
     
 }
 
-protocol WeightsLayoutDelegate {
+public protocol WeightsLayoutDelegate {
     func layoutSubviews(_ parent: UIView)
 }

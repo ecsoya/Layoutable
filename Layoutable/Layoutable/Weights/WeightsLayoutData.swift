@@ -1,6 +1,6 @@
 //
 //  WeightsLayoutData.swift
-//  Impasto
+//  Layoutable
 //
 //  Created by Ecsoya on 31/03/2017.
 //  Copyright © 2017 Soyatec. All rights reserved.
@@ -8,20 +8,20 @@
 
 import UIKit
 
-class WeightsLayoutData {
+public class WeightsLayoutData {
 
-    var width: CGFloat = 0
-    var height: CGFloat = 0 
+    public var width: CGFloat = 0
+    public var height: CGFloat = 0
 
-    var alignment: WeightsLayoutAlignment = .fill
+    public var alignment: WeightsLayoutAlignment = .fill
 
-    init(width: CGFloat = 0, height: CGFloat = 0, alignment: WeightsLayoutAlignment = .fill) {
+    public init(width: CGFloat = 0, height: CGFloat = 0, alignment: WeightsLayoutAlignment = .fill) {
         self.width = width
         self.height = height
         self.alignment = alignment
     }
 }
 
-enum WeightsLayoutAlignment {
+public enum WeightsLayoutAlignment {
     case fill, left, center, right, top, bottom
 }
